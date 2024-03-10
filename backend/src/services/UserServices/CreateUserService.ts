@@ -25,7 +25,7 @@ const CreateUserService = async ({
   password,
   name,
   queueIds = [],
-  profile = "admin",
+  profile = "user",
   whatsappId
 }: Request): Promise<Response> => {
   const schema = Yup.object().shape({
