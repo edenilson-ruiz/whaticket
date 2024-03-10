@@ -98,7 +98,10 @@ const MainListItems = (props) => {
         perform="drawer-admin-items:view"
         yes={() => (
           <>
-            <Divider />
+            <Divider />            
+            <ListSubheader inset>
+              {i18n.t("mainDrawer.listItems.administration")}
+            </ListSubheader>
             <ListItemLink
               to="/connections"
               primary={i18n.t("mainDrawer.listItems.connections")}
@@ -108,9 +111,6 @@ const MainListItems = (props) => {
                 </Badge>
               }
             />
-            <ListSubheader inset>
-              {i18n.t("mainDrawer.listItems.administration")}
-            </ListSubheader>
             <ListItemLink
               to="/users"
               primary={i18n.t("mainDrawer.listItems.users")}
