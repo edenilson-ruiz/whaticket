@@ -109,6 +109,7 @@ const messages = {
         form: {
           name: "Nombre",
           default: "Por Defecto",
+          farewellMessage: "Mensaje de despedida",
         },
         buttons: {
           okAdd: "Agregar",
@@ -227,7 +228,7 @@ const messages = {
         },
       },
       ticketsQueueSelect: {
-        placeholder: "Linhas",
+        placeholder: "Líneas",
       },
       tickets: {
         toasts: {
@@ -288,7 +289,7 @@ const messages = {
           tickets: "Tickets",
           contacts: "Contactos",
           quickAnswers: "Respuestas rápidas",
-          queues: "Linhas",
+          queues: "Líneas",
           administration: "Administración",
           users: "Usuarios",
           settings: "Configuración",
@@ -304,7 +305,7 @@ const messages = {
         noTickets: "Sin notificaciones.",
       },
       queues: {
-        title: "Linhas",
+        title: "Líneas",
         table: {
           name: "Nombre",
           color: "Color",
@@ -321,7 +322,7 @@ const messages = {
         },
       },
       queueSelect: {
-        inputLabel: "Linhas",
+        inputLabel: "Líneas",
       },
       quickAnswers: {
         title: "Respuestas rápidas",

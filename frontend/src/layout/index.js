@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
+    backgroundColor: "#774fcd",
   },
   appBarShift: {
     marginLeft: drawerWidth,
@@ -195,7 +196,7 @@ const LoggedInLayout = ({ children }) => {
       <AppBar
         position="absolute"
         className={clsx(classes.appBar, drawerOpen && classes.appBarShift)}
-        color={process.env.NODE_ENV === "development" ? "inherit" : "primary"}
+        color={process.env.NODE_ENV === "development" ? "primary" : "secondary"}
       >
         <Toolbar variant="dense" className={classes.toolbar}>
           <IconButton
@@ -217,7 +218,7 @@ const LoggedInLayout = ({ children }) => {
             noWrap
             className={classes.title}
           >
-            WhaTicket
+            EasyChat
           </Typography>
           {user.id && <NotificationsPopOver />}
 
