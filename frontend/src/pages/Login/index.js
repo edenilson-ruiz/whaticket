@@ -54,6 +54,12 @@ const useStyles = makeStyles((theme) => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+  icon: {
+    marginBottom: theme.spacing(2),
+    width: '50%',
+    height: 'auto',
+    maxWidth: 100,
+  }
 }));
 
 const Login = () => {
@@ -77,9 +83,10 @@ const Login = () => {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
+        <img src={`${process.env.PUBLIC_URL}/easychat.png`} alt="logo" className={classes.icon} />
+        {/* <Avatar className={classes.avatar}>
           <LockOutlined />
-        </Avatar>
+        </Avatar> */}
         <Typography component="h1" variant="h5">
           {i18n.t("login.title")}
         </Typography>
@@ -131,18 +138,6 @@ const Login = () => {
           >
             {i18n.t("login.buttons.submit")}
           </Button>
-          <Grid container>
-            <Grid item>
-              <Link
-                href="#"
-                variant="body2"
-                component={RouterLink}
-                to="/signup"
-              >
-                {i18n.t("login.buttons.register")}
-              </Link>
-            </Grid>
-          </Grid>
         </form>
       </div>
       <Box mt={8}>{/* <Copyright /> */}</Box>

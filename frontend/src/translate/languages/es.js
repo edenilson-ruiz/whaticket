@@ -1,23 +1,6 @@
 const messages = {
   es: {
     translations: {
-      signup: {
-        title: "Registro",
-        toasts: {
-          success:
-            "¡El usuario ha sido creado satisfactoriamente! ¡Ahora inicia sesión!",
-          fail: "Error creando el usuario. Verifica la data reportada.",
-        },
-        form: {
-          name: "Nombre",
-          email: "Correo Electrónico",
-          password: "Contraseña",
-        },
-        buttons: {
-          submit: "Regístrate",
-          login: "¿Ya tienes una cuenta? ¡Inicia sesión!",
-        },
-      },
       login: {
         title: "Inicio de Sesión",
         form: {
@@ -26,7 +9,6 @@ const messages = {
         },
         buttons: {
           submit: "Ingresa",
-          register: "¿No tienes cuenta? ¡Regístrate!",
         },
       },
       auth: {
